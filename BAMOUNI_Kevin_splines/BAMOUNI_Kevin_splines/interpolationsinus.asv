@@ -1,0 +1,8 @@
+x=linspace(-10,10,20);
+y=sin(x);
+[xx,yy]=pspline(x,y,40);
+plot(xx,yy,'g*',x,y,'rd',x,y,'r');
+%plot();
+xlabel('abcisses');
+ylabel('ordonnées');
+title('interpolation par splines cubiques naturelles de la fonction sinus');

@@ -1,0 +1,15 @@
+function [ interpolation ] = Constructinterpolation( X,NBP )
+%UNTITLED6 Summary of this function goes here
+%   Detailed explanation goes here
+
+interpolation1=linspace(X(1),X(length(X)),NBP);
+for i=1:(length(X))
+    for j=1:(length(interpolation1)-1)
+        if X(i)<interpolation1(j) && X(i)>interpolation1(j)
+            interpolation(j)=X(i);
+        end
+    end
+end
+    
+end
+
